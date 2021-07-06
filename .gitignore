@@ -20,3 +20,6 @@ Gemfile.lock
 # package
 .bundle/
 vendor/
+
+# metadata
+.jekyll-metadata
