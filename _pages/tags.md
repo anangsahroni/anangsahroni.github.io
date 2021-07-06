@@ -9,11 +9,8 @@ permalink: /blog/tags
 
 <h2 id="categories">Categories</h2>
 <div class="tag-list">
-<a href="/blog/category/essays">Essays ({{ site.categories.essay | size }})</a>
+<a href="/blog/category/pygeo">Pygeo ({{ site.categories.pygeo | size }})</a>
 <a href="/blog/category/notes">Notes ({{ site.categories.note | size }})</a>
-<a href="/blog/category/now">Now ({{ site.categories.now | size }})</a>
-<a href="/blog/category/tech-guides">Tech guides ({{ site.categories.tech-guide | size }})</a>
-<a href="/english">English guides ({{ site.categories.english-guide | size }})</a>
 </div>
 
 <h2 id="tags">Tags</h2>

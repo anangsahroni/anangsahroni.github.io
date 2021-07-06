@@ -1,12 +1,12 @@
 title: "Derek’s Digital Garden" 
-author: Derek Kedziora
-email: "hello@derekkedziora.com"
-description: "The place where I putz around, write, tinker, experiment and procrastinate"
-github: derekkedziora
+author: Anang Sahroni
+email: "anangs972@gmail.com"
+description: "The place where I rumbling around with geo, py, and other boring stuffs"
+github: anangsahroni
 highlighter: rouge
 markdown: kramdown
 parse_block_html: false
-url: https://derekkedziora.com
+url: https://anangsahroni.github.io
 permalink: blog/:title
 show_drafts: true
 defaults:
@@ -54,8 +54,6 @@ plugins:
 
 feed: 
   categories: 
-    - english-guide
-    - essay
     - now
     - note
-    - tech-guide
+    - pygeo
