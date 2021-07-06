@@ -34,7 +34,7 @@ I’m a geophysics student and part time Python developer: studying earth rumble
 
 This is a [small b blog](https://tomcritchlow.com/2018/02/23/small-b-blogging/). It's meant to be lighthearted, rough around the edges and an ongoing work in progress. Blog articles mostly written in Bahasa Indonesia but i am on my way to make this website work both for English and Bahasa Indonesia.
 
-I use [Jekyll](https://jekyllrb.com) to build a static site and adapting/forking/copying/and modifying beautiful, simple, and elegant theme from Derek Kedziora: [source code on GitHub](https://github.com/derekkedziora/derekkedziora.com) or [blog](https://derekkedziora.com/).
+I use [Jekyll](https://jekyllrb.com) to build a static site and adapting/forking/copying/and modifying beautiful, simple, and elegant theme from Anang Sahroni: [source code on GitHub](https://github.com/derekkedziora/derekkedziora.com) or [blog](https://derekkedziora.com/).
 
 <script>
 const photos = [
