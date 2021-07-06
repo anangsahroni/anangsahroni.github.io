@@ -16,3 +16,7 @@ _site/
 # gemlock
 Gemfile 
 Gemfile.lock
+
+# package
+.bundle/
+vendor/
