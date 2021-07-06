@@ -2,19 +2,19 @@ let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
 let theme = sessionStorage.getItem('theme');
 
 if (systemInitiatedDark.matches) {
-	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+	document.getElementById("theme-toggle").innerHTML = "<i class='fas fa-sun'></i>";
 } else {
-	document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+	document.getElementById("theme-toggle").innerHTML = "<i class='fas fa-moon'></i>";
 }
 
 function prefersColorTest(systemInitiatedDark) {
   if (systemInitiatedDark.matches) {
   	document.documentElement.setAttribute('data-theme', 'dark');		
-   	document.getElementById("theme-toggle").innerHTML = "Light Mode";
+   	document.getElementById("theme-toggle").innerHTML = "<i class='fas fa-sun'></i>";
    	sessionStorage.setItem('theme', '');
   } else {
   	document.documentElement.setAttribute('data-theme', 'light');
-    document.getElementById("theme-toggle").innerHTML = "Dark Mode";
+    document.getElementById("theme-toggle").innerHTML = "<i class='fas fa-moon'></i>";
     sessionStorage.setItem('theme', '');
   }
 }
