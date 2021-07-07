@@ -11,6 +11,7 @@ permalink: /blog/tags
 <div class="tag-list">
 <a href="/blog/category/pygeo">Pygeo ({{ site.categories.pygeo | size }})</a>
 <a href="/blog/category/notes">Notes ({{ site.categories.note | size }})</a>
+<a href="/blog/category/tech">Tech ({{ site.categories.tech | size }})</a>
 </div>
 
 <h2 id="tags">Tags</h2>
