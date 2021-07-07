@@ -7,7 +7,7 @@ tags: jekyll
 permalink: /blog/cloudinary-cloud-media
 ---
 
-Efek _nyari_ dan akhirnya menemukan _template_ dan tema yang cocok untuk memudakan (??) blog ini (terima kasih [Derek Kedziora](derekkedziora.com)), ternyata saya dapat bonus pengetahuan baru. Saat lihat bagian `about` di web Derek, fotonya bisa berubah-ubah secara random, tapi bukan itu yang menarik. Yang menarik _malah_ pemanfaatan [Cloudinary](https://cloudinary.com/) untuk menyimpan foto-foto yang akan dirandom. Hasil ngecek webnya dibilang bahwa Cloudinary ini adalah layanan pengelolaan dan optimasi media yang mau dipakai diaplikasi atau web. Karena penasaran akhirnya saya coba _upload_ beberapa foto ke Cloudinary.
+Efek _nyari_ dan akhirnya menemukan _template_ dan tema yang cocok untuk memudakan (??) blog ini (terima kasih [Derek Kedziora](derekkedziora.com)), ternyata saya dapat bonus pengetahuan baru. Saat lihat bagian `about` di web Derek, fotonya bisa berubah-ubah secara random, tapi bukan itu yang menarik. Yang menarik _malah_ pemanfaatan [Cloudinary](https://cloudinary.com/) untuk menyimpan foto-foto yang akan dirandom. Hasil ngecek webnya dibilang bahwa Cloudinary ini adalah layanan pengelolaan dan optimasi media yang mau dipakai di aplikasi atau web. Karena penasaran akhirnya saya coba _upload_ beberapa foto ke Cloudinary.
 
 ![Media Library Cloudinary](https://res.cloudinary.com/dm62lnxoi/image/upload/c_scale,w_800/v1625635974/articles/cloudinary_med_lcwcus.png)
 
