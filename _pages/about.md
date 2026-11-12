@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student @ <a href='https://www.geo.lmu.de/deepdyn/en/projects/lhuillier-florian-geomagnetic-field-behaviour/'>Ludwig-Maximilians-Universität München</a>
+subtitle: Data analysis &amp; scientific software · PhD researcher (geophysics), <a href='https://www.geo.lmu.de/deepdyn/en/projects/lhuillier-florian-geomagnetic-field-behaviour/'>LMU Munich</a>
 
 profile:
   align: right
@@ -17,4 +17,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Studying and conducting research using Paleomagnetism to analyze and characterize the behavior of the Earth's ancient magnetic field. Formerly, I served as a computational software engineer, gaining expertise in seismology, geophysical signal processing, geophysical computation, and geophysical inverse problems. My experience also encompasses data collection through web scraping and software development. Over the past 4 years, I've developed proficiency as a developer, particularly in scientific software as well as in general software realm, including web development. Proficient in Python, Javascript, HTML, and CSS.
+Data analyst and software developer with a background in physics and geophysics.
+
+From 2020 to 2024 I built real-time data pipelines, REST back-ends and dashboards for sensor data from seismic and magnetic instruments at Geoseismal Research Center (Indonesia). As technical lead of TARSIUS, I designed the real-time pipeline from seismic stations to earthquake parameters (Python, Redis, PostgreSQL).
+
+Since 2024 I have been analysing laboratory magnetometer data as a doctoral researcher at LMU Munich.
+
+**Tools:** Python (NumPy, SciPy, Pandas, ObsPy), Django REST Framework, PostgreSQL, Redis, JavaScript/React, Plotly.js, Bokeh, HoloViz Panel, Git, MATLAB, QGIS/ArcGIS.
+
+Have a look at my [projects](/projects/) and my [CV](/cv/).

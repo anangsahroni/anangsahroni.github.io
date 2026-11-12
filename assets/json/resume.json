@@ -1,82 +1,101 @@
 {
   "basics": {
     "name": "Anang Sahroni",
-    "label": "Geophysicist",
+    "label": "Data analysis & scientific software development",
     "image": "",
     "email": "anangs972@gmail.com",
     "phone": "",
     "url": "https://anangsahroni.github.io/",
-    "summary": "PhD student in Paleomagnetism and Geomagnetism with previous experience as computational geophysics",
+    "summary": "Data analyst and software developer with a background in physics and geophysics. From 2020 to 2024 I built real-time data pipelines, REST back-ends and dashboards for sensor data from seismic and magnetic instruments; since 2024 I have been analysing laboratory measurement data at LMU Munich.",
     "location": {
-      "address": "Theresiestr. 41",
-      "postalCode": "80333",
-      "city": "München",
-      "countryCode": "GER",
+      "city": "Munich",
+      "countryCode": "DE",
       "region": "Bavaria"
     },
     "profiles": [
       {
-        "network": "Twitter",
+        "network": "LinkedIn",
+        "username": "anang-sahroni",
+        "url": "https://www.linkedin.com/in/anang-sahroni/"
+      },
+      {
+        "network": "GitHub",
         "username": "anangsahroni",
-        "url": "https://twitter.com/anangsahroni"
+        "url": "https://github.com/anangsahroni"
       }
     ]
   },
   "work": [
     {
       "name": "Ludwig-Maximilians-Universität München",
-      "position": "PhD Research Associate (Wissenschaftliche Mitarbeiter)",
+      "position": "Research Associate (Doctoral Researcher)",
       "url": "https://www.geo.lmu.de/deepdyn/en/projects/lhuillier-florian-geomagnetic-field-behaviour/",
       "startDate": "2024-02-01",
       "endDate": "now",
-      "summary": "Studying and conducting research in Paleomagnetism to analyze and characterize the behavior of the Earth's ancient geomagnetic field. Funded by DFG (Deutsche Forschungsgemeinschaft).",
+      "summary": "Quantitative analysis of laboratory measurement data in paleomagnetism. Funded by DFG (Deutsche Forschungsgemeinschaft).",
       "highlights": [
-        "Geophysics",
-        "Paleomagnetism",
-        "Geomagnetism",
-        "Rock Magnetism"
+        "Analysing and quality-checking laboratory magnetometer data with PCA and directional statistics (Fisher distribution) in MATLAB",
+        "Planning and running international field campaigns for data collection in six countries (Europe, Africa, Indonesia)",
+        "Presenting results internationally: 2 peer-reviewed journal articles, 2 international conference contributions"
       ]
     },
     {
       "name": "Geoseismal Research Center",
-      "position": "Computational Software Engineer",
+      "position": "Computational Software Engineer (part-time, 75%)",
       "url": "https://id.linkedin.com/company/geoseismal",
-      "startDate": "2020-02-01",
-      "endDate": "2024-01-01",
-      "summary": "Contributed as a developer to various projects, including real-time earthquake monitoring applications, passive seismic data analysis tools, software suites for geomagnetic data analysis, and 3D elastic seismic wave simulation modules. My roles ranged from backend to frontend tasks, utilizing Python and Javascript technologies such as Django, ReactJS, and Electron, and involving tasks like scraping and processing large datasets.",
+      "startDate": "2020-04-01",
+      "endDate": "2024-01-31",
+      "summary": "Scientific software for magnetic, gravity and seismic measurement data, from back-end to front-end.",
       "highlights": [
-        "Geophysics",
-        "Seismic",
-        "Geomagnetic",
-        "Computation",
-        "Python",
-        "Javascript"
+        "Technical lead of TARSIUS: designed the real-time pipeline from seismic stations to earthquake parameters (Python, Redis, PostgreSQL)",
+        "Built back-ends and REST APIs (Python, Django REST Framework, PostgreSQL) for processing and managing magnetic, gravity and seismic measurement data",
+        "Built web front-ends and dashboards (ReactJS) for data processing tools"
       ]
     },
     {
-      "name": "Indonesia's Ministry of Agrarian Affairs and Spatial Planning/National Land Agency",
-      "position": "Disaster Analyst",
+      "name": "Universitas Gadjah Mada",
+      "position": "Research Assistant",
+      "url": "https://www.ugm.ac.id/",
+      "startDate": "2020-01-01",
+      "endDate": "2022-06-30",
+      "summary": "Earthquake statistics, seismic hazard and teaching material in Python.",
+      "highlights": [
+        "Built a dashboard of earthquake statistics for Indonesia's provinces (Python, HoloViz Panel)",
+        "Probabilistic seismic hazard modeling (PSHA) with OpenQuake",
+        "Created Python/Jupyter course material for seismic data analysis: accelerogram processing, earthquake catalogs and location with ObsPy"
+      ]
+    },
+    {
+      "name": "Ministry of Agrarian Affairs and Spatial Planning/National Land Agency, Indonesia",
+      "position": "Disaster Risk Analyst",
       "url": "https://djtr.atrbpn.go.id/",
       "startDate": "2019-06-01",
-      "endDate": "2019-12-31",
-      "summary": "Conducted disaster risk assessments for spatial planning in disaster-prone regions, focusing on creating and integrating hazard maps using GIS to provide essential disaster analysis for disaster risk reduction in spatial planning.",
+      "endDate": "2020-01-31",
+      "summary": "Hazard mapping for spatial planning in disaster-prone regions.",
       "highlights": [
-        "Disaster",
-        "Hazards",
-        "GIS",
-        "Spatial Planning",
-        "Maps"
+        "Spatial statistical modeling (weights of evidence) of natural hazards around the Palu Special Economic Zone, Sulawesi (ArcGIS, QGIS)"
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
+      "institution": "Ludwig-Maximilians-Universität München, Germany",
+      "url": "https://www.lmu.de/",
+      "area": "Geophysics",
+      "studyType": "Ph.D. (expected 2027)",
+      "startDate": "2024-02-01",
+      "endDate": "now",
+      "courses": [
+        "Geomagnetic field behavior and geodynamo characterization at the end of the Cretaceous Normal Superchron"
+      ]
+    },
+    {
       "institution": "Universitas Gadjah Mada, Yogyakarta, Indonesia",
       "url": "https://www.ugm.ac.id/",
       "area": "Physics/Geophysics",
       "studyType": "Master",
-      "startDate": "2020-09-01",
+      "startDate": "2020-08-01",
       "endDate": "2023-01-31",
       "score": "3.82",
       "courses": [
@@ -100,43 +119,40 @@
     {
       "title": "Third Winning Team",
       "date": "2018-04-01",
-      "awarder": "Geo Quiz - EAGE-HAGI First Asia Pacific Meeting on Near Surface Geoscience and Engineering ",
+      "awarder": "Geo Quiz - EAGE-HAGI First Asia Pacific Meeting on Near Surface Geoscience and Engineering",
       "summary": ""
     }
   ],
   "certificates": [],
-  "publications": [],
+  "publications": [
+    {
+      "name": "Palaeomagnetic Secular Variation of Early Miocene Volcanics from the Rhön (Germany)",
+      "publisher": "Geophysical Journal International",
+      "releaseDate": "2026-01-01",
+      "url": "https://doi.org/10.1093/gji/ggag458",
+      "summary": "Y. Chi, A. Sahroni, S. Hahn, F. Lhuillier"
+    },
+    {
+      "name": "Magmatic evolution and rotation dynamics of Gorontalo Eastern Mountain complex, North Sulawesi Arc, Indonesia, and their tectonic implications",
+      "publisher": "Lithos, 540–541, 108671",
+      "releaseDate": "2026-01-01",
+      "url": "https://doi.org/10.1016/j.lithos.2026.108671",
+      "summary": "I.N. Manyoe, G.I. Marliyani, A. Harijoko, Wahyudi, M.N. Putri, A. Sahroni, M. Nukman, F. Lhuillier"
+    }
+  ],
   "skills": [
-    {
-      "name": "Computational geophysics"
-    },
-    {
-        "name": "Seismic analysis"
-    },
-    {
-        "name": "Geomagnetic"
-    },
-    {
-        "name": "Inverse problem"
-    },
-    {
-        "name": "Software development"
-    },
-    {
-        "name": "Git"
-    },
-    {
-        "name": "Python"
-    },
-    {
-        "name": "Javascript"
-    },
-    {
-        "name": "HTML"
-    },
-    {
-        "name": "CSS"
-    } 
+    { "name": "Python" },
+    { "name": "JavaScript / React" },
+    { "name": "SQL / PostgreSQL" },
+    { "name": "Redis (Pub/Sub)" },
+    { "name": "Django REST Framework" },
+    { "name": "Git" },
+    { "name": "MATLAB" },
+    { "name": "Time-series and signal processing" },
+    { "name": "Statistics" },
+    { "name": "Inversion" },
+    { "name": "Dashboards (Bokeh, HoloViz Panel, Plotly.js)" },
+    { "name": "GIS (ArcGIS, QGIS)" }
   ],
   "languages": [
     {
@@ -156,64 +172,46 @@
   "references": [],
   "projects": [
     {
-      "name": "Spect____ 3.0",
-      "summary": "Software development for passive seismic processing, cloud-based and desktop application"   ,
-      "startDate":"2023-01-01",
-      "endDate":"2023-12-31",
-      "highlights": [
-        "spectral finite element method",
-        "cloud-based",
-        "python",
-        "javascript"
-      ]   
+      "name": "TARSIUS",
+      "summary": "Real-time earthquake data monitoring and processing; technical lead",
+      "startDate": "2022-01-01",
+      "endDate": "2024-01-31",
+      "highlights": ["real-time pipeline", "python", "redis", "postgresql"]
     },
     {
-      "name": "Spect____ 2.0",
-      "summary": "Software development for passive seismic processing, cloud-based and desktop application",
-      "startDate":"2022-01-01",
-      "endDate":"2022-12-31",
-      "highlights": [
-        "low frequency passive seismic",
-        "cloud-based",
-        "python",
-        "javascript"
-      ]   
+      "name": "PertagamANT 2.0",
+      "summary": "Processing of non-seismic geophysical data (time-lapse microgravity, ground magnetic and aeromagnetic data); backend developer",
+      "startDate": "2023-01-01",
+      "endDate": "2023-12-31",
+      "highlights": ["aeromagnetic", "microgravity", "python"]
     },
     {
-      "name": "Pert_____ 2.0",
-      "summary": "Software development for potential fields mapping, cloud-based and desktop application",
-      "startDate":"2022-01-01",
-      "endDate":"2022-12-31",
-      "highlights": [
-        "aeromagnetic",
-        "spatial signal processing",
-        "python",
-        "javascript"
-      ]  
+      "name": "Spectragama 3",
+      "summary": "Passive seismic data processing and management; backend developer (REST API with Django REST Framework)",
+      "startDate": "2022-01-01",
+      "endDate": "2022-12-31",
+      "highlights": ["passive seismic", "django rest framework", "python"]
     },
     {
-      "name": "Pert_____ 1.0",
-      "summary": "Software development for ambient noise tomography, cloud-based and desktop application"   ,
-      "startDate":"2020-01-01",
-      "endDate":"2020-12-31",
-      "highlights": [
-        "ambient noise tomography",
-        "markov chain monte carlo inversion",
-        "python",
-        "javascript"
-      ]
+      "name": "Gamadesk",
+      "summary": "Android and desktop prototype for real-time seismometer data streaming (WebSocket); front-end developer",
+      "startDate": "2021-01-01",
+      "endDate": "2021-12-31",
+      "highlights": ["seedlink", "websocket", "electron", "android"]
     },
     {
       "name": "GAMADU 1.0",
-      "summary": "Development of seismometer instrument in Geophysics, Universitas Gadjah Mada"   ,
-      "startDate":"2020-08-01",
-      "endDate":"2021-07-31",
-      "highlights": [
-        "seismometer",
-        "android",
-        "seedlink",
-        "python"
-      ]
+      "summary": "Development of a seismometer instrument in Geophysics, Universitas Gadjah Mada",
+      "startDate": "2020-08-01",
+      "endDate": "2021-07-31",
+      "highlights": ["seismometer", "android", "seedlink", "python"]
+    },
+    {
+      "name": "PertagamANT",
+      "summary": "Ambient seismic noise tomography; front-end developer",
+      "startDate": "2020-01-01",
+      "endDate": "2020-12-31",
+      "highlights": ["ambient noise tomography", "python"]
     }
   ]
 }

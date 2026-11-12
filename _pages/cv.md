@@ -5,5 +5,5 @@ title: cv
 nav: true
 nav_order: 3
 cv_pdf: 
-description: Below is a summary of my qualifications and experiences.
+description: Data analysis and scientific software, with a background in physics and geophysics.
 ---
