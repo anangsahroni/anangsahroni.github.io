@@ -3,7 +3,8 @@ layout: page
 title: "Geomagnetic data processing"
 description: "Standard and advanced processing of magnetic survey data"
 img: assets/img/projects/geomagnetic-processing.jpg
-importance: 2
+featured: true
+importance: 1
 category: software
 ---
 Processing module for ground and aeromagnetic data (Geoseismal Research Center).

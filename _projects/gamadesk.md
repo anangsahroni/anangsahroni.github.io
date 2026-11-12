@@ -3,7 +3,8 @@ layout: page
 title: "Gamadesk"
 description: "Real-time seismogram viewer for Android and desktop"
 img: assets/img/projects/gamadesk.jpg
-importance: 3
+featured: true
+importance: 2
 category: software
 ---
 Multiplatform application (Android, Linux, Windows) that streams real-time seismogram data from seismometers via SeedLink and WebSocket (2021, Geoseismal Research Center). Built with HTML, CSS and JavaScript, packaged with Electron and Android WebView.

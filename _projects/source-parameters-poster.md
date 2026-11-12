@@ -3,7 +3,7 @@ layout: page
 title: "Earthquake source parameters with few stations"
 description: "Poster, GEOSEA XVI"
 img: assets/img/projects/geosea-poster.jpg
-importance: 8
+importance: 2
 category: research
 ---
 Forward modelling with the spectral element method (SPECFEM3D Globe) as a first step towards waveform-based determination of earthquake source parameters with a minimum number of stations (Universitas Gadjah Mada).

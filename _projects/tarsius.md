@@ -2,7 +2,8 @@
 layout: page
 title: "TARSIUS"
 description: "Real-time earthquake monitoring and processing"
-importance: 1
+img: assets/img/projects/tarsius.jpg
+importance: 5
 category: software
 ---
 Real-time earthquake data monitoring and processing system (2022–2024, Geoseismal Research Center).

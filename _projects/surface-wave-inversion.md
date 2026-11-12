@@ -3,7 +3,8 @@ layout: page
 title: "Bayesian surface-wave inversion"
 description: "Markov chain Monte Carlo inversion of dispersion curves"
 img: assets/img/projects/mcmc-inversion.jpg
-importance: 4
+featured: true
+importance: 3
 category: software
 ---
 Python library for the Markov chain Monte Carlo (MCMC) inversion of surface-wave dispersion curves into 1D shear-wave velocity models, with multiprocessing (2022, part of the GamaSPAC software suite).

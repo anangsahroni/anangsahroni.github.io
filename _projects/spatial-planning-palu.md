@@ -3,7 +3,7 @@ layout: page
 title: "Spatial planning around Palu"
 description: "Natural hazard mapping for detailed spatial planning"
 img: assets/img/projects/spatial-planning-palu.jpg
-importance: 10
+importance: 4
 category: research
 ---
 Natural hazard mapping with the weights-of-evidence method for the detailed spatial plan of Labuan and Tanantovea, near the Palu Special Economic Zone, Sulawesi (2019–2020, Ministry of Agrarian Affairs and Spatial Planning).

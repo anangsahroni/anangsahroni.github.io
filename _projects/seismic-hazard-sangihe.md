@@ -3,7 +3,7 @@ layout: page
 title: "Seismic hazard of Sangihe"
 description: "PSHA and HVSR"
 img: assets/img/projects/psha-hvsr.jpg
-importance: 9
+importance: 3
 category: research
 ---
 Probabilistic seismic hazard analysis (PSHA) with OpenQuake combined with site amplification from HVSR measurements for Sangihe, Indonesia (Universitas Gadjah Mada).

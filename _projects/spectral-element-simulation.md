@@ -3,7 +3,7 @@ layout: page
 title: "Spectral element wave simulation"
 description: "Topography-following hexahedral mesh"
 img: assets/img/projects/hexahedral-mesh.jpg
-importance: 7
+importance: 1
 category: research
 ---
 Hexahedral mesh that follows the topography, prepared for spectral element simulation of elastic wave propagation; generated with Python and visualised in ParaView (Geoseismal Research Center).
