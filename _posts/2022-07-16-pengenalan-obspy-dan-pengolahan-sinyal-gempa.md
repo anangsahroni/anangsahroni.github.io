@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Pengenalan `obspy` dan pengolahan sinyal gempa sederhana
+title: Introduction to `obspy` and simple earthquake signal processing
 date: 2022-07-16 09:00:00+0700
-description: Menggunakan modul Obspy untuk melakukan pengolahan sinyal gempa secara sederhana
+description: Using ObsPy for simple processing of earthquake signals
 tags: seismology, python, geophysics
 categories: notebook
 giscus_comments: true

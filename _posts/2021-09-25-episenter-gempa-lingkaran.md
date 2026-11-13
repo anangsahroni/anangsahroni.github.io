@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Menentukan episenter gempabumi dengan metode lingkaran
+title: Locating an earthquake epicentre with the circle method
 date: 2021-09-25 09:00:00+0700
-description: Menggunakan metode lingkaran untuk menentukan episenter gempa bumi, dilakukan dengan Python
+description: Using the circle method to locate an earthquake epicentre in Python
 tags: seismology, python, geophysics
 categories: notebook
 featured: false

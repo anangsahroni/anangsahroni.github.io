@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Menentukan hiposenter gempabumi dengan metode probabilistik
+title: Locating an earthquake hypocentre with a probabilistic method
 date: 2021-09-27 09:00:00+0700
-description: Menggunakan metode probabilistik untuk menentukan episenter gempa bumi, dilakukan dengan Python
+description: Using a probabilistic method to locate an earthquake hypocentre in Python
 tags: seismology, python, geophysics
 categories: notebook
 giscus_comments: true

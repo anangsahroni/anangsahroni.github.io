@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Simulasi gerakan tanah dengan `obspy`
+title: Ground-motion simulation with `obspy`
 date: 2022-07-17 09:00:00+0700
-description: Menggunakan modul Obspy untuk melakukan simulasi gerakan tanah (perpindahan, kecepatan, dan percepatan)
+description: Using ObsPy to simulate ground motion (displacement, velocity and acceleration)
 tags: seismology, python, geophysics
 categories: notebook
 giscus_comments: true

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Koreksi baseline pada rekaman akselerometer
+title: Baseline correction of accelerometer records
 date: 2022-07-18 09:00:00+0700
-description: Menggunakan python dan obspy untuk melakukan koreksi baseline pada rekaman akselerometer
+description: Using Python and ObsPy to correct the baseline of accelerometer records
 tags: seismology, python, geophysics
 categories: notebook
 giscus_comments: true

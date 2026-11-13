@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Medan Gravitasi Vertikal akibat Titik Massa
+title: Vertical gravity field of a point mass
 date: 2019-05-21 16:00:00
-description: Pengaplikasian Python untuk plot Medan Gravitasi Titik Massa, digenerasi ulang dari Gravity and Magnetic Exploration -  Principles, Practices, and Applications (Hinze et al., 2013)
+description: Using Python to plot the gravity field of a point mass, reproduced from Gravity and Magnetic Exploration - Principles, Practices, and Applications (Hinze et al., 2013)
 tags: gravity, python
 categories: geophysics
 featured: false
@@ -13,40 +13,35 @@ related_posts: true
 ---
 
 
-> Konten ini juga sebagai bahan belajar saya, kalau ada kesalahan bisa dikoreksi, _thanks :)_
+> This post is also part of my own learning. If you spot a mistake, please let me know.
 
 
-Akhirnya setelah sekian lama berkutat dengan web berbagai event/organisasi tanpa punya blog sendiri, sekarang punya _hehehe_... ya semoga konsisten bisa posting macam-macam minimal seminggu sekali. Terima kasih pada GitHub dan Jekyll yang memberikan ruang serta _tools_ yang luar bisa _customable_.
+While reading [Gravity and Magnetic Exploration: Principles, Practices, and Applications](https://www.cambridge.org/core/books/gravity-and-magnetic-exploration/20BABB4AAFCDF8DC7F4CB36B8359D482) by William J. Hinze, Ralph R. B. von Frese and Afif H. Saad (2012), I wanted to learn how to map the magnitude of a gravity field with `Python`. The task is fairly simple, but as a beginner I learned a lot by working through it step by step.
 
-Belakangan ini saya memang tertarik untuk mendalami bahasa pemrograman `Python`, bukan tanpa alasan sih, tuntutan duniawai agar bisa lebih _survive_ di dunia _hahaha_. Bersamaan baca buku [Gravity and Magnetic Exploration: Principles, Practices, and Applications](https://www.cambridge.org/core/books/gravity-and-magnetic-exploration/20BABB4AAFCDF8DC7F4CB36B8359D482) karya William J. Hinze, Ralph R. B. von Frese and Afif H. Saad (2012), saya tertarik untuk belajar cara membuat peta magnitudo medan gravitasi. _Sebenernya_ cukup sederhana, tapi untuk _newbie_ macam saya ya kaya begini cukup menyulitkan, pada akhirnya saya banyak belajar karena _kepo_ sana-sini.
+I hope this is useful for other `Python` beginners, and suggestions from experienced readers are welcome. The code below is simple and contains several simplifications, for example in the derivative, which I hope to improve later.
 
->Berawal dari coba-coba akhirnya keterusan, oposih. skip.
-
-Saya _sih_ berharap ada pembaca yang terinspirasi, terutama pembaca yang _newbie_ `Python` sehingga bisa ikut belajar, buat para _mastah_ juga ikut membantu memberikan saran _hehehe_. Kode-kode di bawah ini sebenarnya sederhana dan banyak simplifikasi, misal dalam penurunan, kedepan semoga bisa saya sempurnakan. Untuk para _geopipisis_ semoga konten saya dapat menginspirasi dan menambah ilmu tentang per-_gravity_-an.  
-
-Oke _to the point_, jadi ini adalah cara menghitung besar medan gravitasi ($ \boldsymbol{g} $) dari titik massa $ m $  kg  di kedalaman $ d $ meter komponen $ x $, $ y $, maupun $ z $ dari penurunan potensial gravitasi $ U $. Rumus potensial gravitasi sendiri [1]:
+This post computes the gravity field ($ \boldsymbol{g} $) of a point mass $ m $ kg at a depth of $ d $ metres, in the $ x $, $ y $ or $ z $ component, by differentiating the gravitational potential $ U $. The gravitational potential is [1]:
 
 $$ U = G \frac{m} {r} $$
 
-dengan $ G $ : konstanta gravitasi, $ m $ : massa, dan $ r $ : jarak. Jarak ($ r $) sendiri merupakan $ \sqrt{x^2 + y^2 + z^2} $ , kok malah jadi _sepaneng gini ya wehehehe_. Nah ini contoh untuk komponen $ z $ [2]:
+where $ G $ is the gravitational constant, $ m $ the mass and $ r $ the distance, $ \sqrt{x^2 + y^2 + z^2} $. For the $ z $ component [2]:
 
 $$ \boldsymbol{g_{z}} = \frac {\partial U}{\partial z} $$
 
-Nah disini saya ingin memberikan cara menghitung penurunan (derivatif) dengan rumus turunan sederhana yaitu [3]:
+Here I compute the derivative with the simple definition [3]:
 
 $$ \boldsymbol{g_{z}} = \lim_{\Delta z \to 0} \frac {U(x,y,z+ \Delta z)-U(x,y,z)}{\Delta z} $$
 
-_(mohon dikoreksi kalo salah ya hehehe)_  
-Nah karena ini pake diskrit di `Python` jadi saya pilih saja $ \Delta z $ sekecil mungkin mendekati 0. Ya walaupun sebenarnya langsung bisa pakai rumus [4]:
+Because the computation in `Python` is discrete, I choose $ \Delta z $ as small as possible, close to 0. The field could also be computed directly with [4]:
 
 $$ \boldsymbol{g_{z}} = -G \frac{m \Delta z} {r^3} $$
 
-Tapi kita coba pakai penurunan sendiri biar lebih menantang _hehehe_, semoga _bener_ ya.
+but computing the derivative ourselves is a good exercise.
 
-Nah langsung saja praktek:
-  
-#### 1. Impor dulu modul dan konstanta yang dipake.
-Disini saya pakai massa dan kedalaman tertera, silahkan kalo mau diganti, _bebas pokoke_.
+Let's put it into practice:
+
+#### 1. Import the modules and define the constants
+I use the mass and depth below; feel free to change them.
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -55,26 +50,27 @@ import matplotlib.pyplot as plt
 G = 6.67408e-11 # gravitational constant
 m = 1e12  # mass of a point mass in kg
 d = -500 # depth of a point mass in m
-```  
-Massa yang digunakan ada 10^12 kg dan kedalaman 500 meter, nilai ini saya sesuaikan dengan referensi buku Gravity and Magnetic Exploration, teman-teman bisa ganti _monggo_.
-  
-#### 2. Selanjutnya adalah membuat sebaran datanya.
-Pertama membuat sebaran koordinat dulu:
+```
+The mass is 10^12 kg and the depth 500 m, matching the example in Gravity and Magnetic Exploration.
+
+#### 2. Create the coordinates
+First the coordinate ranges:
 ```python
 # create x, y, z sparse
 x = np.arange(-1500, 1500, 50)
 y = np.arange(-1500, 1500, 50)
 z = np.arange(-500, 10, 10)
-```  
-Sebaran yang saya pakai adalah -1500-1450 meter untuk `x` dan `y`, dan -500-0 meter untuk `z`.
-Baru abis itu dibuat _grid_ jadi _3D array_:
+```
+The ranges are -1500 to 1450 m for `x` and `y`, and -500 to 0 m for `z`.
+Then we build a _grid_ as a _3D array_:
 ```python
 # create X, Y, Z grid
 X, Y, Z = np.meshgrid(x, y, z)
-```  
-Buat teman-teman _geopipisis_ pastinya sudah akrab dengan istilah _grdding_.
-#### 3. Lanjut mendefinisikan fungsi menghitung potensial $ U $
-Membuat fungsi sederhana untuk menghitung potensial gravitasi:
+```
+Geophysicists will know this step as _gridding_.
+
+#### 3. Define a function for the potential $ U $
+A simple function to compute the gravitational potential:
 ```python
 # define function for gravitational potential
 def grav_potential(xi, yi, zi, m, d):
@@ -83,10 +79,11 @@ def grav_potential(xi, yi, zi, m, d):
  r[r==0]=np.nan #avoid dividing by zero
  pot = G * m / r
  return pot
-```  
-Yang perlu diperhatikan adalah adanya `zi-d` pada operasi untuk menghitung jarak dari _point mass_. `r[r==0]=np.nan` digunakan untuk menghilangkan data di `r=0` (di titik massa) agar tidak terjadi pembagian dengan 0 (`ZeroDivisionError`). 
-#### 4. Kemudian mendefinisikan fungsi derivatif terhadap $ z $ (menghitung medan)
-Menurunkan potensial gravitas menjadi medan gravitasi komponen $ z $ menggunakan persamaan derivatif yang ada di atas [3].
+```
+Note the `zi-d` term in the distance to the _point mass_. `r[r==0]=np.nan` removes the value at `r=0` (at the point mass itself) to avoid a division by zero (`ZeroDivisionError`).
+
+#### 4. Define the derivative with respect to $ z $ (the field)
+We differentiate the gravitational potential into the $ z $ component of the gravity field with the derivative formula above [3].
 ```python
 #define function for derivative
 dz = 0.000001
@@ -94,22 +91,24 @@ def grav_field(Xi, Yi, Zi):
     "Calculate derivative in certain component, ex: grav_field(X, Y, Z+dz) --> Z component"
     field = ((grav_potential(Xi, Yi, Zi, m, d) - grav_potential(X, Y, Z, m, d)) / dz)
     return field
-```  
-Saya menggunakan nilai $ \Delta z $ (`dz = 0.000001`) yang saya anggap sudah mendekati nilai `0`.
-#### 5. Langsung panggil derivatif terhadap $ z $
-nb. kalo mau terhadap komponen lain tinggal dz nya dipindah hehew, dikalikan `1e5` hanya biar skala warnanya masuuk..
+```
+I use $ \Delta z $ = `dz = 0.000001`, which I consider close enough to `0`.
+
+#### 5. Compute the derivative with respect to $ z $
+For another component, move `dz` to that coordinate. The result is multiplied by `1e5` to get a convenient colour scale.
 ```python
 # call the derivative
 grav_z = grav_field(X, Y, Z+dz) * 1e5
-```  
-Nilai `1e5` nanti akan dikembalikan lagi di keterangan warna _(colorbar)_.
-#### 6. Mari diplot di kedalaman=0.
-Kalau mau kedalaman lain nilai `-1` tinggal diganti, itu dari -500 sampai 0 lompatan 10. Contoh kalo kedalaman -450 berarti `1`, -500 berarti `0`, -10 berarti `-2` dsb.
+```
+The factor `1e5` is shown again in the colour bar label.
+
+#### 6. Plot at depth 0
+For another depth, replace the index `-1`; `z` runs from -500 to 0 in steps of 10. For example, -450 m is index `5`, -500 m is index `0` and -10 m is index `-2`.
 ```python
 plt.contourf(X[:,:,-1], Y[:,:,-1], grav_z[:,:,-1])
-```  
-  
-#### 7. Final, masukkan parametter _plotting_
+```
+
+#### 7. Finally, add the _plotting_ parameters
 ```python
 plt.colorbar()
 plt.text(1600, 1600, "x 10^-5 m/s^2")
@@ -117,8 +116,8 @@ plt.xlabel("Easting (m)")
 plt.ylabel("Northing (m)")
 plt.title("Gravitational field in Z comp at 0 m of a point \n mass (1e12 kg) located at 500 m depth")
 plt.show()
-```  
-Dan hasilnya adalah...
+```
+And the result:
 ![$ g_{z} $](/static/images/posts/grav_z.jpg){: .img-fluid }
 
-Halaman ini akan saya sempurnakan lagi untuk kedepannya, untuk kalibrasi hasil bisa dilakukan dengan memasukkan `m` menjadi massa bumi dan `d` menjadi diameter bumi, walaupun belum memperhitungkan kelengkungan tetapi sudah cukup untuk melihat nilai medan gravitasi. Thank you for reading :)
+To check the result, you can set `m` to the mass of the Earth and `d` to the Earth's radius. This ignores the Earth's curvature, but is enough to check the order of magnitude of the gravity field. Thank you for reading.

@@ -141,18 +141,42 @@
     }
   ],
   "skills": [
-    { "name": "Python" },
-    { "name": "JavaScript / React" },
-    { "name": "SQL / PostgreSQL" },
-    { "name": "Redis (Pub/Sub)" },
-    { "name": "Django REST Framework" },
-    { "name": "Git" },
-    { "name": "MATLAB" },
-    { "name": "Time-series and signal processing" },
-    { "name": "Statistics" },
-    { "name": "Inversion" },
-    { "name": "Dashboards (Bokeh, HoloViz Panel, Plotly.js)" },
-    { "name": "GIS (ArcGIS, QGIS)" }
+    {
+      "name": "Python"
+    },
+    {
+      "name": "JavaScript / React"
+    },
+    {
+      "name": "SQL / PostgreSQL"
+    },
+    {
+      "name": "Redis (Pub/Sub)"
+    },
+    {
+      "name": "Django REST Framework"
+    },
+    {
+      "name": "Git"
+    },
+    {
+      "name": "MATLAB"
+    },
+    {
+      "name": "Time-series and signal processing"
+    },
+    {
+      "name": "Statistics"
+    },
+    {
+      "name": "Inversion"
+    },
+    {
+      "name": "Dashboards (Bokeh, HoloViz Panel, Plotly.js)"
+    },
+    {
+      "name": "GIS (ArcGIS, QGIS)"
+    }
   ],
   "languages": [
     {
@@ -176,42 +200,71 @@
       "summary": "Real-time earthquake data monitoring and processing; technical lead",
       "startDate": "2022-01-01",
       "endDate": "2024-01-31",
-      "highlights": ["real-time pipeline", "python", "redis", "postgresql"]
+      "highlights": [
+        "real-time pipeline",
+        "python",
+        "redis",
+        "postgresql"
+      ]
     },
     {
       "name": "PertagamANT 2.0",
-      "summary": "Processing of non-seismic geophysical data (time-lapse microgravity, ground magnetic and aeromagnetic data); backend developer",
+      "summary": "Processing of non-seismic geophysical data (time-lapse microgravity, ground magnetic and aeromagnetic data); backend developer (registered copyright, DJKI)",
       "startDate": "2023-01-01",
       "endDate": "2023-12-31",
-      "highlights": ["aeromagnetic", "microgravity", "python"]
+      "highlights": [
+        "aeromagnetic",
+        "microgravity",
+        "python"
+      ],
+      "url": "https://pdki-indonesia.dgip.go.id/search?keyword=pertagamant&type=copyright"
     },
     {
       "name": "Spectragama 3",
-      "summary": "Passive seismic data processing and management; backend developer (REST API with Django REST Framework)",
+      "summary": "Passive seismic data processing and management; backend developer (REST API with Django REST Framework) (registered copyright, DJKI)",
       "startDate": "2022-01-01",
       "endDate": "2022-12-31",
-      "highlights": ["passive seismic", "django rest framework", "python"]
+      "highlights": [
+        "passive seismic",
+        "django rest framework",
+        "python"
+      ],
+      "url": "https://pdki-indonesia.dgip.go.id/search?keyword=spectragama&type=copyright"
     },
     {
       "name": "Gamadesk",
       "summary": "Android and desktop prototype for real-time seismometer data streaming (WebSocket); front-end developer",
       "startDate": "2021-01-01",
       "endDate": "2021-12-31",
-      "highlights": ["seedlink", "websocket", "electron", "android"]
+      "highlights": [
+        "seedlink",
+        "websocket",
+        "electron",
+        "android"
+      ]
     },
     {
       "name": "GAMADU 1.0",
       "summary": "Development of a seismometer instrument in Geophysics, Universitas Gadjah Mada",
       "startDate": "2020-08-01",
       "endDate": "2021-07-31",
-      "highlights": ["seismometer", "android", "seedlink", "python"]
+      "highlights": [
+        "seismometer",
+        "android",
+        "seedlink",
+        "python"
+      ]
     },
     {
       "name": "PertagamANT",
-      "summary": "Ambient seismic noise tomography; front-end developer",
+      "summary": "Ambient seismic noise tomography; front-end developer (registered copyright, DJKI)",
       "startDate": "2020-01-01",
       "endDate": "2020-12-31",
-      "highlights": ["ambient noise tomography", "python"]
+      "highlights": [
+        "ambient noise tomography",
+        "python"
+      ],
+      "url": "https://pdki-indonesia.dgip.go.id/search?keyword=pertagamant&type=copyright"
     }
   ]
 }
